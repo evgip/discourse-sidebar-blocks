@@ -21,10 +21,10 @@ createWidget('sidebar-reply-item', {
     return [
       h('span.avatar', this.attach('post-avatar', attrs)),
       h('span.reply-date', {}, dateNode(createdAt)),
-      h('span.excerpt', excerpt),
       h('a.item-title', {
         attributes: { href: url}
-      }, attrs.topic_title)
+      }, attrs.topic_title),
+      h('span.excerpt', excerpt)
     ]
   },
 });
