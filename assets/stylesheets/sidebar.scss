@@ -24,6 +24,22 @@ html:not(.mobile-view) {
     width: 22%;
     float: right;
   }
+  
+  h3.sidebar-heading {
+   color: #888;
+   padding-top: 14px;
+  }
+
+ a.cat {
+  padding-left: 14px;
+  margin-top: 8px;
+  display: block; 
+  font-size: 16px;
+ }
+
+  ol.category-breadcrumb {
+  display: none;
+ }
 
   .sidebar-category-posts {
     margin-bottom: 30px;
