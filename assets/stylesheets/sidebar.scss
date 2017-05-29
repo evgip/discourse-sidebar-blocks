@@ -1,5 +1,7 @@
-@media(max-width:900px) {
+
 html:not(.mobile-view) {
+  @media(max-width:900px) {
+  
   .has-sidebar + .sidebar {
     width: 20%;
     float: right;
