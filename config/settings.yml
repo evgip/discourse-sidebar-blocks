@@ -11,7 +11,7 @@ plugins:
     default: ''
     client: true
   sidebar_num_results:
-    default: '6'
+    default: '3'
     client: true
   sidebar_enable_second_col:
     default: false
