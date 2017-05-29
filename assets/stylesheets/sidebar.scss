@@ -1,3 +1,4 @@
+@media(max-width:900px) {
 html:not(.mobile-view) {
   .has-sidebar + .sidebar {
     width: 20%;
@@ -35,6 +36,11 @@ html:not(.mobile-view) {
   margin-top: 8px;
   display: block; 
   font-size: 16px;
+  font-weight: normal;
+  padding: 2px 8px;
+  background-color: #E1ECF4;
+  color: #39739d !important; 
+   
  }
 
   ol.category-breadcrumb {
@@ -130,4 +136,5 @@ html:not(.mobile-view) {
   .sidebar-custom-content {
     margin-bottom: 12px;
   }
+}
 }
