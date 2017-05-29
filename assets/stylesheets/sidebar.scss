@@ -3,13 +3,13 @@ html:not(.mobile-view) {
   @media(min-width:980px) {
   
   .has-sidebar + .sidebar {
-    width: 20%;
+    width: 15%;
     float: right;
     min-height: 100px;
   }
 
   .list-container.has-sidebar {
-    width: 75%;
+    width: 80%;
     float: left;
   }
 
@@ -40,7 +40,7 @@ html:not(.mobile-view) {
   margin-top: 8px;
   margin-left: 13px;
   display: inline-block; 
-  font-size: 16px;
+  font-size: 13px;
   font-weight: normal;
   padding: 2px 8px;
   background-color: #E1ECF4;
