@@ -51,9 +51,10 @@ html:not(.mobile-view) {
     background-color: #cee0ed
     }
     
-  ol.category-breadcrumb {
-  display: none;
- }
+body[class*="category-other"] .sidebar {display: none;visibility: hidden;}
+body[class*="category-other"] .list-container.has-sidebar {float: none;width: 100%;}
+body[class*="category-chat"] .sidebar {display: none;visibility: hidden;}
+body[class*="category-chat"] .list-container.has-sidebar {float: none;width: 100%;}
 
   .sidebar-category-posts {
     margin-bottom: 30px;
