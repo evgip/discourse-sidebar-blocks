@@ -1,6 +1,6 @@
 
 html:not(.mobile-view) {
-  @media(max-width:900px) {
+  @media(min-width:900px) {
   
   .has-sidebar + .sidebar {
     width: 20%;
@@ -31,12 +31,13 @@ html:not(.mobile-view) {
   h3.sidebar-heading {
    color: #888;
    padding-top: 14px;
+   font-size: 13px;
   }
 
  a.cat {
-  padding-left: 14px;
   margin-top: 8px;
-  display: block; 
+  margin-left: 13px;
+  display: inline-block; 
   font-size: 16px;
   font-weight: normal;
   padding: 2px 8px;
