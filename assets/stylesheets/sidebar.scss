@@ -43,9 +43,12 @@ html:not(.mobile-view) {
   padding: 2px 8px;
   background-color: #E1ECF4;
   color: #39739d !important; 
-   
  }
 
+  a.cat:hover {
+    background-color: #cee0ed
+    }
+    
   ol.category-breadcrumb {
   display: none;
  }
