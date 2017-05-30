@@ -46,10 +46,6 @@ html:not(.mobile-view) {
     color: #999 !important;
    }
     
-body[class*="category-other"] .sidebar {display: none;visibility: hidden;}
-body[class*="category-other"] .list-container.has-sidebar {float: none;width: 100%;}
-body[class*="category-chat"] .sidebar {display: none;visibility: hidden;}
-body[class*="category-chat"] .list-container.has-sidebar {float: none;width: 100%;}
 body[class*="category-test"] .sidebar {display: none;visibility: hidden;}
 body[class*="category-test"] .list-container.has-sidebar {float: none;width: 100%;}
 body[class*="category-staff"] .sidebar {display: none;visibility: hidden;}
