@@ -1,9 +1,16 @@
 
 html:not(.mobile-view) {
   
-.cooked{
-    font-size: 16px;line-height: 1.6;
-  }
+.topic-status-info {
+    max-width: 840px;
+}
+.small-action {
+    max-width: 840px;
+}
+.post-menu-area {
+    margin-bottom: 1px;
+    margin-top: 5px;
+}
   
   @media(min-width:980px) {
   
