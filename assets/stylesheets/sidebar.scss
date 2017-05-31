@@ -11,8 +11,18 @@ html:not(.mobile-view) {
     margin-bottom: 1px;
     margin-top: 5px;
 }
+a.tag-sid {
+  font-weight: normal;
+  color: #39739d !important;
+  background-color: #E1ECF4;
+  padding: 2px 8px;
+  }
   
-  @media(min-width:980px) {
+a.tag-sid:hover {
+  background-color: #cee0ed;
+  }  
+  
+ @media(min-width:980px) {
   
   .has-sidebar + .sidebar {
     width: 15%;
