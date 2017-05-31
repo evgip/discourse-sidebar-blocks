@@ -1,6 +1,11 @@
 
 html:not(.mobile-view) {
-  
+.list-controls .category-dropdown-menu .badge-wrapper.bullet .badge-category {
+    max-width: 160px;
+}
+.category-dropdown-menu {
+    min-width: 248px;
+}  
 .topic-status-info {
     max-width: 840px;
 }
