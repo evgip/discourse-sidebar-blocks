@@ -53,11 +53,20 @@ a.tag-sid:hover {
   a.cat:hover {
     color: #999 !important;
    }
-    
+     
+  a.cat-t {
+  margin-top: 5px;
+  display: inline-block; 
+  font-size: 13px;
+  font-weight: normal;
+  color: #e45735 !important; 
+   }  
+   a.cat-t:hover {
+   color: #ed5b38 !important;
+   }
 body[class*="category-test"] .sidebar {display: none;visibility: hidden;}
 body[class*="category-test"] .list-container.has-sidebar {float: none;width: 100%;}
 body[class*="category-staff"] .sidebar {display: none;visibility: hidden;}
 body[class*="category-staff"] .list-container.has-sidebar {float: none;width: 100%;}
-
 }
 }
