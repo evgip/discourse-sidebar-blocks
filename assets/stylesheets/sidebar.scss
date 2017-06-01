@@ -24,6 +24,10 @@ a.tag-sid:hover {
   
  @media(min-width:980px) {
   
+ .has-sidebar + .sidebar.sticked {
+ display: none;
+   }   
+     
   .has-sidebar + .sidebar {
     width: 15%;
     float: left;
