@@ -15,13 +15,9 @@ export default createWidget('sidebar-items', {
     var self = this;
 
     sidebarBlocks.map(function(item) {
-      if (item == 'latest_replies') {
-        result.push(self.attach('sidebar-latest-replies'));
-      } else if (item == 'custom_html') {
+    
         result.push(self.attach('sidebar-custom-content'));
-      } else {
-        result.push(self.attach('sidebar-category-posts', {category: item}));
-      }
+
     });
 
     return result;
