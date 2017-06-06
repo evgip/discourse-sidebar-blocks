@@ -12,6 +12,14 @@ export default createWidget('profile-t', {
       const username = currentUser.get('username');
  
     contents.push(
+      
+    h('li', this.attach('link', {
+     route: 'user',
+     model: currentUser,
+     className: 'menu-profile',
+     rawLabel: username
+          })),  
+      
     h('div', this.attach('link', {
       className: 'menu',
       label: 'main.qa-you',
