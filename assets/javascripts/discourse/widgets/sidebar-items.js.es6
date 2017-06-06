@@ -16,7 +16,14 @@ export default createWidget('sidebar-items', {
 
     sidebarBlocks.map(function(item) {
     
+    if (item == 'profile') {
+      result.push(self.attach('profile-t'));
+
+
+    } else if (item == 'custom_html') {
         result.push(self.attach('sidebar-custom-content'));
+      
+    }
 
     });
 
