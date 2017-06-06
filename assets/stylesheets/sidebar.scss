@@ -12,17 +12,13 @@ a.widget-link.menu:hover {
 a.widget-link.menu-profile:hover {
   color: #e45735 !important;
 }
-.sidebar-menu > li.us > a.menu-profile { 
+.sidebar-menu > .us > a.menu-profile { 
 display: inline-block; 
 }
-.sidebar-menu > li.us > a.menu-profile:first-letter {
+.sidebar-menu > .us > a.menu-profile:first-letter {
 color: red; 
 }
  
-.sidebar-menu li {
-margin-left: 14px;
-}
-
 .dov{
 margin-bottom: 14px;
 margin-top: 11px;
