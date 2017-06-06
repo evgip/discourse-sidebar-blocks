@@ -29,21 +29,21 @@ export default createWidget('profile-t', {
       href: 'http://toxu.ru/t/uroven-doveriya-na-sajte-toxu-ru/61'
           })),  
       
-    h('li.us', this.attach('link', {
+    h('div.us', this.attach('link', {
      route: 'user',
      model: currentUser,
      className: 'menu-profile',
      rawLabel: username
           })),  
       
-    h('li', this.attach('link', {
+    h('div', this.attach('link', {
       className: 'menu',
       label: 'main.qa-you',
       href: 'http://toxu.ru/posted'
           })),
  
   
-    h('li', this.attach('link', {
+    h('div', this.attach('link', {
       className: 'menu',
       label: 'main.bookmark-you',
       href: 'http://toxu.ru/bookmarks'
