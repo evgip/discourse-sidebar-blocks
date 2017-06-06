@@ -1,5 +1,5 @@
 # name: discourse-sidebar-blocks
-# about: add a sidebar to topic lists (discovery) with several blocks available: posts from a category, recent replies
+# about: add a sidebar to topic lists (discovery) with several blocks available: category,  category, personal data
 # version: 0.1
 # authors: pmusaraj -> Evg
 # url: https://github.com/Toxu-ru/discourse-home-sidebar
