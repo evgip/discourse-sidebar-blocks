@@ -20,14 +20,14 @@ export default createWidget('profile-t', {
      rawLabel: username
           })),  
       
-    h('div', this.attach('link', {
+    h('li', this.attach('link', {
       className: 'menu',
       label: 'main.qa-you',
       href: 'http://toxu.ru/posted'
           })),
  
   
-    h('div', this.attach('link', {
+    h('li', this.attach('link', {
       className: 'menu',
       label: 'main.bookmark-you',
       href: 'http://toxu.ru/bookmarks'
