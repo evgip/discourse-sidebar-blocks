@@ -12,6 +12,26 @@ a.widget-link.menu:hover {
 a.widget-link.menu-profile:hover {
   color: #e45735 !important;
 }
+.sidebar-menu > li.us > a.menu-profile { 
+display: inline-block; 
+}
+.sidebar-menu > li.us > a.menu-profile:first-letter {
+color: red; 
+}
+ 
+.sidebar-menu li {
+margin-left: 14px;
+}
+
+.dov{
+margin-bottom: 14px;
+border: 1px solid #45A163;
+text-align: center;
+}
+
+a.menu-dov{
+color: #45A163;
+}
 
 .sidebar-menu li {
 color: #666;
