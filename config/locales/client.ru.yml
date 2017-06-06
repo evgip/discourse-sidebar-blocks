@@ -2,3 +2,7 @@ ru:
   js: 
     sidebar_blocks: 
       recent_replies: "Последние ответы"
+    main:
+      bookmark-you: "Мои закладки"
+      qa-you: "Мои вопросы"
+      mail-you: "Моя почта"
