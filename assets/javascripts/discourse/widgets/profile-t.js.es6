@@ -22,6 +22,8 @@ export default createWidget('profile-t', {
       
     contents.push(
       
+     h('h3.sidebar-heading', 'Меню'),
+      
      h('div.dov', this.attach('link', {
       className: 'menu-dov',
       title: doverie,
