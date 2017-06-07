@@ -24,7 +24,7 @@ export default createWidget('profile-t', {
       
      h('div.dov', this.attach('link', {
       className: 'menu-dov',
-      label: doverie,
+      title: doverie,
       icon: 'user-circle',
       href: 'http://toxu.ru/t/uroven-doveriya-na-sajte-toxu-ru/61'
           })),  
