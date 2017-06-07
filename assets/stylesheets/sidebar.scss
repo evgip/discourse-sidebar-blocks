@@ -19,8 +19,12 @@ display: inline-block;
 color: red; 
 }
  
+.us {
+margin-top: 4px;
+}
+
 .user-profile.widget-container {
-margin-top: 11px;
+margin-top: 1px;
 }
 
 .dov{
@@ -85,7 +89,7 @@ a.tag-sid:hover {
   display: inline-block; 
   font-size: 13px;
   font-weight: normal;
-  color: #666 !important; 
+  color: #222 !important; 
    }
 
   a.cat:hover {
