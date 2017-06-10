@@ -1,4 +1,3 @@
-
 html:not(.mobile-view) {
 a.widget-link.menu {
   margin-top: 3px;
@@ -9,18 +8,27 @@ a.widget-link.menu:hover {
   color: #999 !important;
 }
 
-a.widget-link.menu-profile:hover {
+a.menu-profile:hover {
   color: #e45735 !important;
 }
-.sidebar-menu > .us > a.menu-profile { 
-display: inline-block; 
+a.menu-profile { 
+display: block; 
+color: #222;
+margin: 12px 1px 3px 0;
 }
-.sidebar-menu > .us > a.menu-profile:first-letter {
-color: red; 
+a.menu-profile:first-letter {
+color: #fa6c8d; 
 }
- 
-.us {
+
+.num i.fa-heart {
+    color: #fa6c8d !important;
+}
+
+.vr {color:#666;font-size:12px;display: block;}
+.num {float: right; color:#666;font-size:12px;}
+.dann {
 margin-top: 4px;
+display: block;
 }
 
 .user-profile.widget-container {
@@ -34,11 +42,11 @@ text-align: center;
 max-width: 125px;
 }
 
-a.col0 {color:#45A163;}
-a.col1 {color:#335599;}
-a.col2 {color:#d1f0ff;}
-a.col3 {color:#337799;}
-a.col4 {color:#e45735;}  
+.col0 {color:#45A163;}
+.col1 {color:#335599;}
+.col2 {color:#d1f0ff;}
+.col3 {color:#337799;}
+.col4 {color:#e45735;}  
 
 .sidebar-menu li {
 color: #666;
@@ -80,7 +88,7 @@ a.tag-sid:hover {
    }
   h3.sidebar-heading {
    color: #888;
-   padding-top: 12px;
+   padding-bottom: 4px;
    font-size: 13px;
    font-weight: normal;
    text-transform: uppercase;
