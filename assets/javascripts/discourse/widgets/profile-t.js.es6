@@ -42,13 +42,13 @@ export default createWidget('profile-t', {
 
 
 <a class="menu-profile" href="http://toxu.ru/u/${username}">@${username}</a> 
-<a class="widget-link menu" href="http://toxu.ru/posted">Мои вопросы</a> <span class="num">${topic_count}</span><br>
+<a class="widget-link menu" href="http://toxu.ru/posted">Мои вопросы</a> <span class="numer">${topic_count}</span><br>
 <a class="widget-link menu" href="http://toxu.ru/bookmarks">Мои закладки</a>
 
 <span class="dann">
 <a class="widget-link menu" href="http://toxu.ru/t/uroven-doveriya-na-sajte-toxu-ru/61"><span class="${coll}">${doverie}</span></a> 
-<span class="num"><i class="fa fa-heart"></i> ${likes}</span> </span>
-<span class="vr">Время чтения <span class="num">${time_read}</span></span>
+<span class="numer"><i class="fa fa-heart"></i> ${likes}</span> </span>
+<span class="vr">Время чтения <span class="numer">${time_read}</span></span>
 
 <hr>
 </div>`})
