@@ -41,9 +41,9 @@ export default createWidget('profile-t', {
   new RawHtml({ html: `<div>
 
 
-<a class="menu-profile" href="http://127.0.0.1:3000/u/${username}">@${username}</a> 
-<a class="widget-link menu" href="http://127.0.0.1:3000/posted">Мои вопросы</a> <span class="num">${topic_count}</span><br>
-<a class="widget-link menu" href="http://127.0.0.1:3000/bookmarks">Мои закладки</a>
+<a class="menu-profile" href="http://toxu.ru/u/${username}">@${username}</a> 
+<a class="widget-link menu" href="http://toxu.ru/posted">Мои вопросы</a> <span class="num">${topic_count}</span><br>
+<a class="widget-link menu" href="http://toxu.ru/bookmarks">Мои закладки</a>
 
 <span class="dann">
 <a class="widget-link menu" href="http://toxu.ru/t/uroven-doveriya-na-sajte-toxu-ru/61"><span class="${coll}">${doverie}</span></a> 
