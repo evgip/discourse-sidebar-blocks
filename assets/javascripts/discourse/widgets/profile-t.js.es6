@@ -1,5 +1,8 @@
 import { createWidget } from 'discourse/widgets/widget';
-import { h } from 'virtual-dom';
+import RawHtml from 'discourse/widgets/raw-html';
+import { ajax } from 'discourse/lib/ajax';
+import { popupAjaxError } from 'discourse/lib/ajax-error';
+
 
 export default createWidget('profile-t', {
   tagName: 'div.user-profile.widget-container',
@@ -10,53 +13,52 @@ export default createWidget('profile-t', {
     let contents = []
     if (currentUser) {
       const username = currentUser.get('username');
+      const name = currentUser.get('name');
       const trust_level = currentUser.get('trust_level');
       
-      if (trust_level === 0) { var doverie = 'main.d0-you'; var coll = 'col0';}
-      if (trust_level === 1) { var doverie = 'main.d1-you'; var coll = 'col1';}
-      if (trust_level === 2) { var doverie = 'main.d2-you'; var coll = 'col2';}
-      if (trust_level === 3) { var doverie = 'main.d3-you'; var coll = 'col3';}
-      if (trust_level === 4) { var doverie = 'main.d4-you'; var coll = 'col4';}
+      if (trust_level === 0) { var doverie = 'Посетитель'; var coll = 'col0';}
+      if (trust_level === 1) { var doverie = 'Новичок'; var coll = 'col1';}
+      if (trust_level === 2) { var doverie = 'Участник'; var coll = 'col2';}
+      if (trust_level === 3) { var doverie = 'Постоялец'; var coll = 'col3';}
+      if (trust_level === 4) { var doverie = 'Лидер'; var coll = 'col4';}
  
-      
-      
-    contents.push(
-      
-     h('h3.sidebar-heading', 'Меню'),
-      
-     h('div.dov', this.attach('link', {
-      className: coll,
-      title: doverie,
-      icon: 'user-circle',
-      href: 'http://toxu.ru/t/uroven-doveriya-na-sajte-toxu-ru/61'
-          })),  
-      
-    h('div.us', this.attach('link', {
-     route: 'user',
-     model: currentUser,
-     className: 'menu-profile',
-     rawLabel: username
-          })),  
-      
-    h('div', this.attach('link', {
-      className: 'menu',
-      label: 'main.qa-you',
-      href: 'http://toxu.ru/posted'
-          })),
  
-  
-    h('div', this.attach('link', {
-      className: 'menu',
-      label: 'main.bookmark-you',
-      href: 'http://toxu.ru/bookmarks'
-          }))  
+  var likes;
+  var topic_count;
+  var time_read;
+  $.ajax({
+  url: "/users/"+ username +"/summary.json" ,
+  dataType: 'json',
+  async: false,
+  success: function(data) {
+  likes = data.user_summary.likes_received;	
+  topic_count = data.user_summary.topic_count;	
+  time_read  = data.user_summary.time_read;
+  }
+  });
+    
+  contents.push(
+  new RawHtml({ html: `<div>
 
-         
-          );
+
+<a class="menu-profile" href="http://127.0.0.1:3000/u/${username}">@${username}</a> 
+<a class="widget-link menu" href="http://127.0.0.1:3000/posted">Мои вопросы</a> <span class="num">${topic_count}</span><br>
+<a class="widget-link menu" href="http://127.0.0.1:3000/bookmarks">Мои закладки</a>
+
+<span class="dann">
+<a class="widget-link menu" href="http://toxu.ru/t/uroven-doveriya-na-sajte-toxu-ru/61"><span class="${coll}">${doverie}</span></a> 
+<span class="num"><i class="fa fa-heart"></i> ${likes}</span> </span>
+<span class="vr">Время чтения <span class="num">${time_read}</span></span>
+
+<hr>
+</div>`})
+ 
+   );
    
 } 
 
-return h('div.sidebar-menu', contents);
-}
 
+return contents;
+
+}
 });
