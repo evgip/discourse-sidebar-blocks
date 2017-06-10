@@ -23,17 +23,19 @@ export default createWidget('profile-t', {
       if (trust_level === 4) { var doverie = 'Лидер'; var coll = 'col4';}
  
  
-  var likes;
-  var topic_count;
-  var time_read;
+    var likes;
+    var topic_count;
+    var time_read;
+    var bookmark_count;    
   $.ajax({
   url: "/users/"+ username +"/summary.json" ,
   dataType: 'json',
   async: false,
   success: function(data) {
-  likes = data.user_summary.likes_received;	
-  topic_count = data.user_summary.topic_count;	
-  time_read  = data.user_summary.time_read;
+    likes = data.user_summary.likes_received;	
+    topic_count = data.user_summary.topic_count;	
+    time_read  = data.user_summary.time_read;
+    bookmark_count  = data.user_summary.bookmark_count;
   }
   });
     
@@ -43,7 +45,7 @@ export default createWidget('profile-t', {
 
 <a class="menu-profile" href="http://toxu.ru/u/${username}">@${username}</a> 
 <a class="widget-link menu" href="http://toxu.ru/posted">Мои вопросы</a> <span class="numer">${topic_count}</span><br>
-<a class="widget-link menu" href="http://toxu.ru/bookmarks">Мои закладки</a>
+<a class="widget-link menu" href="http://toxu.ru/bookmarks">Мои закладки</a> <span class="numer">${bookmark_count}</span>
 
 <span class="dann">
 <a class="widget-link menu" href="http://toxu.ru/t/uroven-doveriya-na-sajte-toxu-ru/61"><span class="${coll}">${doverie}</span></a> 
