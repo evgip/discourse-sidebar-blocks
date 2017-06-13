@@ -10,4 +10,7 @@ The latter option, displayed more values. The design is redone.
 
 <img src="https://meta-s3-cdn.global.ssl.fastly.net/optimized/3X/c/c/cc59b003f4923c458400c002ea2f5a25c46b41fe_1_690x268.jpg" width="690">
 
-Important note: this plug-in is for testing purposes only. Language variables are not displayed, css files and others are only developed for the site http://toxu.ru and can disrupt, spoil another site!
+
+This code is only lightly tested. If you are having trouble with this plugin, please let me know.
+
+Pull requests and suggestions for improvement are always welcome.
