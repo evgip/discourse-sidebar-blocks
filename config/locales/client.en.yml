@@ -2,3 +2,13 @@ en:
   js: 
     sidebar_blocks: 
       recent_replies: "Recent replies"
+    main:
+      bookmark-you: "Мои закладки"
+      qa-you: "Мои вопросы"
+      time-you: "Время чтения"
+      mail-you: "Моя почта"
+      d0-you: "Посетитель"
+      d1-you: "Новичок"
+      d2-you: "Участник"
+      d3-you: "Постоялец"
+      d4-you: "Лидер"
