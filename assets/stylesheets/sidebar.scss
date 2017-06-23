@@ -1,4 +1,12 @@
 html:not(.mobile-view) {
+comm{
+    width: 3px;
+    background-color: #ddd;
+    height: 77px;
+    padding: initial;
+    margin: 11px 1px 1px -35px;
+    float: left;
+}
 a.widget-link.menu {
   margin-top: 3px;
   font-size: 13px;
