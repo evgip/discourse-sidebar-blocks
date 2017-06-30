@@ -6,3 +6,4 @@ en:
     sidebar_num_results: "Number of category posts to display on each sidebar block."
     sidebar_enable_second_col: "Show a second sidebar column."
     sidebar_block_order_second_col: "Include blocks in the second sidebar column."
+    mitt_newpage_enabled: "Включить dev stats."
