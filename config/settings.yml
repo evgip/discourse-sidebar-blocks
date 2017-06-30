@@ -13,3 +13,7 @@ plugins:
   sidebar_num_results:
     default: '3'
     client: true
+  mitt_newpage_enabled:
+    default: true
+    client: true
+
