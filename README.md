@@ -16,3 +16,5 @@ The latter option, displayed more values. The design is redone.
 This code is only lightly tested. If you are having trouble with this plugin, please let me know.
 
 Pull requests and suggestions for improvement are always welcome.
+
+Test: http://toxu.ru/stats
