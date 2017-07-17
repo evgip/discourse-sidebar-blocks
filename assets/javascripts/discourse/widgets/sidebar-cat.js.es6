@@ -33,7 +33,7 @@ $.ajax({
 
     if (notification_level > 1)  {
 
-          contents.push(  new RawHtml({ html: `<div> <a href="http://toxu.ru/c/${slug}" class="cat">${name}</a></div>`}));
+          contents.push(  new RawHtml({ html: `<div class="${slug}"> <a href="http://toxu.ru/c/${slug}" class="cat">${name}</a></div>`}));
 
     } 
 }  
