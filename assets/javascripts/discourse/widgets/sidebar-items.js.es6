@@ -23,6 +23,9 @@ export default createWidget('sidebar-items', {
     } else if (item == 'custom_html') {
         result.push(self.attach('sidebar-custom-content'));
       
+    } else if (item == 'cat') {
+        result.push(self.attach('sidebar-cat'));
+      
     }
 
     });
