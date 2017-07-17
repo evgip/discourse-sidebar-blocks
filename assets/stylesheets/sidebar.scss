@@ -81,7 +81,14 @@ a.tag-sid {
 a.tag-sid:hover {
   background-color: #cee0ed;
   }  
-  
+ 
+div.test a.cat {
+    color: #08e !important; 
+}
+div.staff a.cat {
+    color: #08e !important;
+}
+    
  @media(min-width:980px) {
   
   .has-sidebar + .sidebar {
@@ -97,6 +104,7 @@ a.tag-sid:hover {
   h3.sidebar-heading {
    color: #888;
    padding-bottom: 4px;
+   padding-top: 13px;
    font-size: 13px;
    font-weight: normal;
    text-transform: uppercase;
