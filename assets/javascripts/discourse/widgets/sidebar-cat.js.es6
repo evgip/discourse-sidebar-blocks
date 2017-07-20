@@ -21,6 +21,8 @@ $.ajax({
           async: false,
           success: function(data) {
 
+          contents.push(  new RawHtml({ html: `<h3 class="sidebar-heading">Подписан</h3>`}));
+           
           for (var i = 0 ; i < data.category_list.categories.length ; i++) {
           var name;
           var slug;
@@ -36,7 +38,11 @@ $.ajax({
           contents.push(  new RawHtml({ html: `<div class="${slug}"> <a href="http://toxu.ru/c/${slug}" class="cat">${name}</a></div>`}));
 
     } 
-}  
+} 
+           
+          contents.push(  new RawHtml({ html: `<div><br><a href="http://toxu.ru/my/preferences/categories" class="cat">Настройки подписки</a> <br>
+ <a href="http://toxu.ru/c/toxu/regulations" class="cat-t">Оф. правила</a></div></div>`}));           
+           
 }
 });
 
