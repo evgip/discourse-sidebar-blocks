@@ -1,3 +1,52 @@
+/*head*/
+.category-chat img#site-logo.logo-big, .category-other img#site-logo.logo-big
+{
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url(http://toxu.ru/uploads/default/original/2X/4/43426e9b3ce97bfa06fd8738ee20191b18a3d6f3.png) no-repeat;
+  background-size: 150px 40px;
+  width: 150px; /* Width of new image */
+  height: 40px; /* Height of new image */
+  padding-left: 150px; /* Equal to width of new image */    
+}
+
+.category-chat img#site-logo.logo-small, .category-other img#site-logo.logo-small {
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-right: 8px;
+    background: url(http://toxu.ru/uploads/default/original/2X/d/dc081015bfa39c2411139a1f774751bb8b99f8a5.png) no-repeat;
+    background-size: 40px 40px;
+    width: 40px;
+    height: 40px;
+    padding-left: 40px;
+}
+
+
+.category-chat .d-header, .category-other .d-header
+{
+    background-color : #179cee;
+}
+
+.category-chat .wrap, .category-other .wrap {background: none;}
+.category-chat .d-header .icons .icon, .category-other .d-header .icons .icon,
+.category-chat .d-header .badge-wrapper.bullet span.badge-category,
+.category-other .d-header .badge-wrapper.bullet span.badge-category,
+.category-chat .d-header .title a,
+.category-other .d-header .title a,
+.category-chat .extra-info-wrapper .topic-link, .category-other .extra-info-wrapper .topic-link
+{
+    color : #fff ;
+}
+
+.category-chat .extra-info-wrapper .badge-wrapper.bullet span.badge-category,
+.category-other .extra-info-wrapper .badge-wrapper.bullet span.badge-category
+{
+    color : #fff !important;
+}
+/*end*/
+
 html:not(.mobile-view) {
 .comm{
     width: 3px;
