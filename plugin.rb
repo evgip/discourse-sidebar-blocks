@@ -22,7 +22,7 @@ after_initialize do
       accepted_id = object.custom_fields["accepted_answer_post_id"].to_i
       if accepted_id > 0
         cooked = Post.where(id: accepted_id).pluck('cooked')
-        PrettyText.excerpt(cooked[0], 200, {})
+        PrettyText.excerpt(cooked[0], 150, {})
       else
         object.excerpt
       end
