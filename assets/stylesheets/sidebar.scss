@@ -90,7 +90,7 @@ body .text-label #ember1140.ember-text-field.ember-view{width: 430px;}
 @media(max-width:900px) {
 #banner {display: none;} 
 .sidebar{display: none;}
-#main-outlet .container.list-container.has-sidebar {
+body.navigation-categories #main-outlet .container.list-container.has-sidebar { 
     width: 100%;
     float: left;
 }
@@ -223,6 +223,9 @@ div.staff a.cat {
     width: 85%;
     float: right;
    }
+   
+   
+   
   h3.sidebar-heading {
    color: #888;
    padding-bottom: 4px;
