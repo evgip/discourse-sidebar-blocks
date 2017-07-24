@@ -87,23 +87,6 @@ li.extra-nav-item-outlet.votes {display: none;}
 #banner {display: none;} 
 }
 body .text-label #ember1140.ember-text-field.ember-view{width: 430px;}
-@media(max-width:900px) {
-#banner {display: none;} 
-.sidebar{display: none;}
-body.navigation-categories #main-outlet .container.list-container.has-sidebar { 
-    width: 100%;
-    float: left;
-}
-  
-.topic-list .views {display: none;}
-.topic-list .likes {display: none;}
-.topic-list .votes {display: none;}
-  
-.cat{display: none;} .num.likes{display: none;} .topic-list .views {display: none;}
-.topic-list a.title {font-size: 16px;}   
-.topic-list a.title.visited:not(.badge-notification){font-size: 16px;}  
-
-}
 
 @media(max-width:720px){ .avahome {display: none;} 
 .contents.ember-view .topic-list .creator {margin-left: 1px;}
