@@ -93,6 +93,19 @@ body .text-label #ember1140.ember-text-field.ember-view{width: 430px;}
 #suggested-topics  .topic-list .creator {margin-left: 1px;}
 }
 
+@media(max-width:900px) {
+#banner {display: none;} 
+.sidebar{display: none;}
+  
+.topic-list .views {display: none;}
+.topic-list .likes {display: none;}
+.topic-list .votes {display: none;}
+  
+.cat{display: none;} .num.likes{display: none;} .topic-list .views {display: none;}
+.topic-list a.title {font-size: 16px;}   
+.topic-list a.title.visited:not(.badge-notification){font-size: 16px;}  
+
+}
 
 @media(max-width:620px){ .avahome {display: none;} }
 
