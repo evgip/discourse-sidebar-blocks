@@ -4,7 +4,7 @@
   display: block;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  background: url(http://toxu.ru/uploads/default/original/2X/4/43426e9b3ce97bfa06fd8738ee20191b18a3d6f3.png) no-repeat;
+  background: url(http://toxu.ru/uploads/default/original/2X/9/94776468b97fa13a02683f82db60f73c38f7149e.png) no-repeat;
   background-size: 150px 40px;
   width: 150px; /* Width of new image */
   height: 40px; /* Height of new image */
@@ -23,6 +23,9 @@
     padding-left: 40px;
 }
 
+span.badge-category-bg {
+    border: 1px solid white;
+}
 
 .category-chat .d-header, .category-other .d-header
 {
