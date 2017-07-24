@@ -55,6 +55,8 @@ span.badge-category-bg {
 /*end*/
 
 li.extra-nav-item-outlet.votes {display: none;}
+body[class*="navigation-categories"] .sidebar {display: none;visibility: hidden;}
+body[class*="navigation-categories"] .list-container.has-sidebar {float: none;width: 100%;}
 
 html:not(.mobile-view) {
 .comm{
