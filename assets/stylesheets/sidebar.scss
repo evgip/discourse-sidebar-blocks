@@ -55,6 +55,30 @@ span.badge-category-bg {
 /*end*/
 
 li.extra-nav-item-outlet.votes {display: none;}
+@media(max-width:1010px) {
+#banner {display: none;} 
+}
+body .text-label #ember1140.ember-text-field.ember-view{width: 430px;}
+@media(max-width:900px) {
+#banner {display: none;} 
+.sidebar{display: none;}
+#main-outlet .container.list-container.has-sidebar {
+    width: 100%;
+    float: left;
+}
+.topic-list .views {display: none;}
+.topic-list .likes {display: none;}
+.topic-list .votes {display: none;}
+
+}
+@media(max-width:720px){ .avahome {display: none;} 
+.contents.ember-view .topic-list .creator {margin-left: 1px;}
+#suggested-topics  .topic-list .creator {margin-left: 1px;}
+}
+
+summary:first-of-type {color: #08c;}
+nav.post-controls button.edit.create {color: green !important;}
+
 body[class*="navigation-categories"] .sidebar {display: none;visibility: hidden;}
 body[class*="navigation-categories"] .list-container.has-sidebar {float: none;width: 100%;}
 
