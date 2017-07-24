@@ -54,7 +54,18 @@ span.badge-category-bg {
 }
 /*end*/
 
+
 li.extra-nav-item-outlet.votes {display: none;}
+
+@media(min-width: 1120px) { 
+.categories-and-latest.ember-view .ember-view .category-list {width: 32%; }
+.categories-and-latest .category-list, .categories-and-latest .topic-list-latest {width: 63%;}    
+.topic-body {width: 790px;padding: 12px 11px 1px 11px;}
+.wrap {max-width: 1200px;} 
+#banner {max-width: 1200px;} 
+.timeline-container {margin-left: 1000px;}
+}
+
 @media(max-width:1010px) {
 #banner {display: none;} 
 }
@@ -66,15 +77,17 @@ body .text-label #ember1140.ember-text-field.ember-view{width: 430px;}
     width: 100%;
     float: left;
 }
+  
 .topic-list .views {display: none;}
 .topic-list .likes {display: none;}
 .topic-list .votes {display: none;}
-
 }
+
 @media(max-width:720px){ .avahome {display: none;} 
 .contents.ember-view .topic-list .creator {margin-left: 1px;}
 #suggested-topics  .topic-list .creator {margin-left: 1px;}
 }
+
 
 summary:first-of-type {color: #08c;}
 nav.post-controls button.edit.create {color: green !important;}
