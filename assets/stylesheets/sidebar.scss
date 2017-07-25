@@ -117,6 +117,18 @@ body[class*="navigation-categories"] .sidebar {display: none;visibility: hidden;
 body[class*="navigation-categories"] .list-container.has-sidebar {float: none;width: 100%;}
 
 html:not(.mobile-view) {
+  
+.Footer.Footer--global {border-top: 1px solid #e9e9e9;background-color: #fff;height: 85px;position: relative;width: 100%;z-index: 887;}
+.Footer.Footer--global .Footer-navigation-items .Footer-navigation-item {display: inline-block;margin: 2px 8px;}
+.Footer.Footer--global .Footer-navigation-items {list-style: none;text-align: center;}
+.Footer.Footer--global .Footer-navigation-items {bottom: 45px;left: 0;list-style: none;margin: 0;padding: 0;position: absolute;
+   right: 0;text-align: center;}
+.Footer.Footer--global .FooterItem:link, .Footer.Footer--global .FooterItem:visited, .Footer.Footer--global .FooterItem:active {
+    color: #222;}
+.Footer.Footer--global .FooterItem:hover {color: #777;}
+.Footer.Footer--global .FooterItem {font-size: 14px;text-decoration: none;}
+.Footer.Footer--global .Footer-copyright {bottom: 5px;left: 0;position: absolute;right: 0;text-align: center;}  
+  
 .comm{
     width: 3px;
     background-color: #ddd;
