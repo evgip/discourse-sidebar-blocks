@@ -3,7 +3,6 @@
 A discourse plugin that adds a sidebar to topic lists (discovery) with several blocks available: category, personal data
 
 Плюс, дополнительная страница ./stats
-Site Attendance Test: http://toxu.ru/stats
 
 Demo: <a href="http://toxu.ru">Toxu.ru - Discussions, questions and answers</a>
 
